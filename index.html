@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="style.css"><link
+    type="image/png"
+    sizes="32x32"
+    rel="icon"
+    href="Images/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg"
+  />
+    <link
+    type="image/png"
+    sizes="32x32"
+    rel="icon"
+    href="Images/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg"
+  />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Anime.html">Animations</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
+    </nav>
+
+
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <div class="search-bar">
+            <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="dropdown">
+            <label for="pokemonDropdown">Or select a Pokémon: </label>
+            <select id="pokemonDropdown">
+                <option value="">Select a Pokémon</option>
+            </select>
+        </div>
+
+        <div id="pokemonCard" class="hidden">
+            <h2 id="pokemonDisplayName"></h2>
+            <img id="pokemonImage" src="" alt="Pokémon Image">
+            <p id="pokemonType"></p>
+            <div class="stats">
+                <h3>Stats:</h3>
+                <ul id="pokemonStats"></ul>
+            </div>
+        </div>
+
+        <div id="evolutionChain" class="hidden">
+            <h2>Evolution Chain</h2>
+            <div class="evolution-container">
+                <div class="evolution-stage" id="stage1">
+                    <h3 id="evolution1Name">Stage 1</h3>
+                    <img id="evolution1Image" src="" alt="Evolution 1 Image">
+                </div>
+                <div class="evolution-stage" id="stage2">
+                    <h3 id="evolution2Name">Stage 2</h3>
+                    <img id="evolution2Image" src="" alt="Evolution 2 Image">
+                </div>
+                <div class="evolution-stage" id="stage3">
+                    <h3 id="evolution3Name">Stage 3</h3>
+                    <img id="evolution3Image" src="" alt="Evolution 3 Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <p>© 2024 Pokémon Fansite. All rights reserved.</p>
+            <p><a href="https://www.pokemon.com" target="_blank">Official Pokémon Website</a></p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

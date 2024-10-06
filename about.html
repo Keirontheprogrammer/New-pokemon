@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pokémon Card World</title>
+    <link rel="stylesheet" href="about.css">
+    <link
+    type="image/png"
+    sizes="32x32"
+    rel="icon"
+    href="Images/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg"
+  />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Anime.html">Animations</a></li>
+            <li><a href="Games.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h1>About</h1>
+        <p>Welcome to <strong>Pokémon Card World</strong>!</p>
+        <p>At Pokémon Card World, I am passionate about all things Pokémon! My website was created for fellow Pokémon enthusiasts who love discovering, collecting, and learning about Pokémon through interactive and fun experiences.</p>
+        <p>Whether you're here to explore your favorite Pokémon’s stats, track evolution chains, or simply enjoy the animated cards in high definition, it's all in one place!</p>
+
+        <h2>Mission</h2>
+        <p>The mission is to bring the <strong>Pokémon experience</strong> to life through a user-friendly platform that provides:</p>
+        <ul>
+            <li>Interactive Pokémon Cards with detailed animations and stats.</li>
+            <li>Evolution Chains to trace the evolution paths of your favorite Pokémon.</li>
+        </ul>
+
+        <h2>Why Love Pokémon</h2>
+        <p>Like you, I grew up with Pokémon – from the video games to the movies, and the anime. Pokémon is more than just a hobby; it's a community that brings together anime fans of all ages across the world.</p>
+        <p>With this website, I aim to share my love for Pokémon and offer a place where we can connect with our favorite creatures.</p>
+
+        <h2>The Vision</h2>
+        <p>At <strong>Pokémon Card World</strong>, I strive to create the ultimate destination for Pokémon fans.</p>
+        <br>
+        <p>Thank you for visiting Pokémon Card World – where the world of Pokémon comes to life, one card at a time.</p>
+        <p><strong>Gotta Catch ‘Em All!</strong></p>
+    </div>
+
+    <!-- Add background animation -->
+    <div class="background-animation">
+        <video autoplay muted loop>
+            <source src="Images/videoplayback.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            background: #000000; /* Fallback for older browsers */
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            background-color: #ff3e00;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background-color: #ff5722;
+        }
+
+        /* Content Container */
+        .content-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        h1 {
+            color: #ff3e00;
+            font-size: 2.8rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff5722;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        strong {
+            color: #ff5722;
+        }
+
+        /* Background Video Animation */
+        .background-animation video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-container {
+                margin: 50px 20px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            ul li {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-container {
+                margin: 30px 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: changeBg 50s infinite;
+    transition: background-color 0.5s ease-in-out;
+}
+
+@keyframes changeBg {
+    0% { background-image: url('Images/527854-download-free-pokemon-wallpaper-hd-1920x1080.jpg'); }
+    16.67% { background-image: url('Images/6ae7c249c0f1b635d9aa86d094653fee.jpg'); }
+    33.33% { background-image: url('Images/ca7bf09f2eaf2b1792c74b2fcbfb2a02.jpg'); }
+    50% { background-image: url('Images/HD-wallpaper-pokemon-7.jpg'); }
+    66.67% { background-image: url('Images/9fbdab8e699c7176c7d0c8a205f85c66.jpg'); }
+    83.33% { background-image: url('Images/31b188d4f86ab7dc30c1a210383754a8.jpg'); }
+    100% { background-image: url('Images/1c8f44c9a687e69da5693d54ad8f9c06.jpg'); }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-image: url('Images/d7pya7f-22cc4f26-befd-45f9-95b1-84394eca74e4.jpg');
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav {
+    width: 100%;
+    background-color: #3b4cca;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar input, .dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3b4cca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#pokemonCard {
+    margin-top: 20px;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    background-color: transparent;
+    color: wheat;
+}
+
+#pokemonCard img{
+    width: 250px;
+    height: 250px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.evolution-container {
+    display: flex;
+    justify-content: space-around;
+    color: wheat;
+}
+
+.evolution-stage img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #ff3e00;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #ff5722;
+}
+
+ul#animationsList, ul#gamesList {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+ul#animationsList li, ul#gamesList li {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+ul#animationsList li:hover, ul#gamesList li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animations */
+ul#animationsList li:nth-child(1) {
+    background-image: url('Images/first movie.jpg'); /* Replace with actual animation image */
+}
+ul#animationsList li:nth-child(2) {
+    background-image: url('Images/darkrai.jpg');
+}
+ul#animationsList li:nth-child(3) {
+    background-image: url('Images/the power of one.jpg');
+}
+
+
+/* Games */
+ul#gamesList li:nth-child(1) {
+    background-image: url('Images/Sword Shield.jpg'); /* Replace with actual game image */
+}
+ul#gamesList li:nth-child(2) {
+    background-image: url('Images/gold silver.jpeg');
+}
+ul#gamesList li:nth-child(3) {
+    background-image: url('Images/red blue.jpeg');
+}
+
+
