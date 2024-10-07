@@ -93,3 +93,25 @@ function displayEvolutionChain(chain) {
 
     document.getElementById('evolutionChain').classList.remove('hidden');
 }
+
+function displayPokemon(data) {
+    document.getElementById('pokemonDisplayName').textContent = data.name;
+    // Use animated sprite from Pokémon Showdown (static version or shiny if available)
+    const animatedSpriteUrl = `https://play.pokemonshowdown.com/sprites/xyani/${data.name}.gif`;
+    document.getElementById('pokemonImage').src = animatedSpriteUrl;
+    document.getElementById('pokemonImage').alt = `${data.name} animated sprite`;
+
+    document.getElementById('pokemonType').textContent = `Type: ${data.types.map(t => t.type.name).join(', ')}`;
+
+    const statsList = document.getElementById('pokemonStats');
+    statsList.innerHTML = '';
+    data.stats.forEach(stat => {
+        const statItem = document.createElement('li');
+        statItem.textContent = `${stat.stat.name}: ${stat.base_stat}`;
+        statsList.appendChild(statItem);
+    });
+
+    document.getElementById('pokemonCard').classList.remove('hidden');
+}
+
+
